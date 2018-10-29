@@ -1,0 +1,3 @@
+(executable
+  (name main)
+  (libraries destiny2_api date yojson))

@@ -1,0 +1,13 @@
+(library
+  (name cache)
+  (modules Cache))
+
+(library
+  (name date)
+  (modules Date)
+  (libraries unix str))
+
+(library
+  (name destiny2_api)
+  (modules Destiny2_api)
+  (libraries cache date cohttp-lwt-unix yojson str uri))
